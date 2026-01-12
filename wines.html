@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Naša vina | Vinarija Anja</title>
+    <meta name="description" content="Prikaz svih sorti vina Vinarije Anja. Prikaz ponude." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="vino, vina, bela vina, crvena vina, roze vina"/>
+	  <meta name="author" content="Anastasia Mitevski"/>
+
+
+
+    <link
+      href="css/flexslider.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/line-icons.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/elegant-icons.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/lightbox.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/theme-1.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <!--[if gte IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <link
+      href="http://fonts.googleapis.com/css?family=Cardo:400,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/font-cardo.css" rel="stylesheet" type="text/css" />
+    <script src="./main.js" defer></script>
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="centered-logo top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <a href="index.html">
+                <img
+                  class="logo logo-dark"
+                  src="img/VinarijaLogo.png"
+                  alt="Logo vinarije"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row nav-menu">
+            <div class="col-sm-12 columns text-center">
+              <ul class="menu">
+                <a></a>
+                <li><a href="index.html" target="_self">Početna</a></li>
+                <li><a href="about.html" target="_self">O nama</a></li>
+                <li><a href="process.html" target="_self">Proces</a></li>
+                <li><a href="wines.html" target="_self">Naša vina</a></li>
+                <li>
+                  <a href="degustacija.html" target="_self">Degustacija</a>
+                </li>
+                <li><a href="author.html">Autor</a></li>
+                <li><a href="dokumentacija.pdf" download>Dokumentacija</a></li>
+                <li><a href="sajt.zip" download>Website</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mobile-toggle">
+            <i class="icon icon_menu"></i>
+          </div>
+        </div>
+        <div class="bottom-border"></div>
+      </nav>
+    </div>
+
+    <div class="main-container">
+      <section class="team-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h1>Upoznajte kolekciju naših vina</h1>
+              <p class="lead">
+                Svaka boca nosi priču o zemlji, suncu i pažljivo negovanoj lozi.
+                Naša vina nastaju sa strašću, strpljenjem i dubokim poštovanjem
+                prema tradiciji vinogradarstva.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 text-center" style="margin-bottom: 40px">
+              <div class="filter-nav">
+                <button class="btn-filter active" data-filter="sve">
+                  Sva vina
+                </button>
+                <button class="btn-filter" data-filter="belo">Bela vina</button>
+                <button class="btn-filter" data-filter="crveno">
+                  Crvena vina
+                </button>
+                <button class="btn-filter" data-filter="roze">Roze vina</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" id="wine-grid">
+            <div class="col-md-4 col-sm-6 wine-item" data-type="belo">
+              <div class="team-1-member">
+                <img
+                  alt="Vino"
+                  class="background-image"
+                  src="img/vino_12.png"
+                />
+                <h5>Chardonnay</h5>
+                <span>Sveže i elegantno belo vino</span>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wine-item" data-type="crveno">
+              <div class="team-1-member">
+                <img alt="Vino" class="background-image" src="img/vino_2.png" />
+                <h5>Merlot</h5>
+                <span>Baršunasto crveno vino</span>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wine-item" data-type="crveno">
+              <div class="team-1-member">
+                <img alt="Vino" class="background-image" src="img/vino_3.png" />
+                <h5>Pinot Noir</h5>
+                <span>Rafinirano i aromatično</span>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wine-item" data-type="belo">
+              <div class="team-1-member">
+                <img alt="Vino" class="background-image" src="img/vino_4.png" />
+                <h5>Chenin Blanc</h5>
+                <span>Voćno i osvežavajuće</span>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wine-item" data-type="crveno">
+              <div class="team-1-member">
+                <img alt="Vino" class="background-image" src="img/vino_5.png" />
+                <h5>Nebbiolo</h5>
+                <span>Duboko i kompleksno</span>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wine-item" data-type="roze">
+              <div class="team-1-member">
+                <img alt="Vino" class="background-image" src="img/vino_6.png" />
+                <h5>Rose Premium</h5>
+                <span>Lagano i cvetno roze vino</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="duplicatable-content pure-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h1>Koje vino je pravo za vas?</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <h6>Za ljubitelje lakših i svežih vina</h6>
+              <p>
+                Ako uživate u osvežavajućim aromama i laganom telu, naša bela
+                vina su savršen izbor za tople dane i opuštene trenutke.
+              </p>
+            </div>
+
+            <div class="col-sm-4">
+              <h6>Za one koji cene ravnotežu</h6>
+              <p>
+                Vina srednjeg tela nude idealan spoj voćnosti i strukture,
+                savršena uz raznovrsna jela i prijatna druženja.
+              </p>
+            </div>
+
+            <div class="col-sm-4">
+              <h6>Za istinske poznavaoce</h6>
+              <p>
+                Puna, kompleksna crvena vina namenjena su onima koji uživaju u
+                bogatim aromama, dugom završetku i ozbiljnom karakteru.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="testimonials-slider text-center">
+                <ul class="slides">
+                  <li>
+                    <p class="text-white lead">
+                      Vino iz ove vinarije postalo je neizostavan deo naših
+                      porodičnih proslava. Kvalitet se oseća u svakom gutljaju.
+                    </p>
+                    <span class="author text-white">Marko Jovanović</span>
+                  </li>
+
+                  <li>
+                    <p class="text-white lead">
+                      Izuzetna vina sa autentičnim karakterom. Svaka boca priča
+                      svoju priču.
+                    </p>
+                    <span class="author text-white">Ana Petrović</span>
+                  </li>
+
+                  <li>
+                    <p class="text-white lead">
+                      Spoj tradicije i modernog pristupa. Topla preporuka za sve
+                      ljubitelje dobrog vina.
+                    </p>
+                    <span class="author text-white">Nikola Ilić</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer-container">
+      <footer class="footer-1 bg-secondary-1" style="padding: 60px 0 20px 0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5
+                class="text-white"
+                style="text-transform: uppercase; letter-spacing: 1px"
+              >
+                Vinarija Anja
+              </h5>
+              <p style="color: #ccc; line-height: 1.6">
+                Tradicija, strast i pažljivo odabrano grožđe sa obronaka
+                Pančeva. Posvećeni smo stvaranju vina koja pričaju priču o našem
+                teroaru i ljubavi prema prirodi.
+              </p>
+            </div>
+
+            <div class="col-sm-4 text-center">
+              <h5
+                class="text-white"
+                style="text-transform: uppercase; letter-spacing: 1px"
+              >
+                Navigacija
+              </h5>
+              <ul class="footer-links" style="list-style: none; padding: 0">
+                <li><a href="index.html" style="color: #a87f97">Početna</a></li>
+                <li><a href="about.html" style="color: #a87f97">O nama</a></li>
+                <li>
+                  <a href="wines.html" style="color: #a87f97">Naša vina</a>
+                </li>
+                <li>
+                  <a href="contact.html" style="color: #a87f97">Kontakt</a>
+                </li>
+                <li>
+                  <a href="sitemap.html" style="color: #a87f97"
+                    >Mapa sajta (Sitemap)</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 text-right">
+              <h5
+                class="text-white"
+                style="text-transform: uppercase; letter-spacing: 1px"
+              >
+                Kontakt info
+              </h5>
+              <p style="color: #ccc">
+                <i class="icon icon_pin" style="color: #a87f97"></i>
+                Bavanistanski put, Pančevo<br />
+                <i class="icon icon_phone" style="color: #a87f97"></i> +381 64
+                123 45 67<br />
+                <i class="icon icon_mail" style="color: #a87f97"></i>
+                contact@vinarija.com
+              </p>
+              <p style="color: #ccc; font-size: 13px">
+                <strong>Radno vreme:</strong><br />
+                Pon - Pet: 09h - 20h<br />
+                Vikend: 10h - 18h
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="row"
+            style="
+              margin-top: 40px;
+              border-top: 1px solid #333;
+              padding-top: 20px;
+            "
+          >
+            <div class="col-sm-12 text-center">
+              <ul class="social-icons" style="margin-bottom: 20px">
+                <li>
+                  <a href="#"><i class="icon social_twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon social_facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon social_instagram"></i></a>
+                </li>
+              </ul>
+              <p style="color: #a87f97; font-size: 14px">
+                © Copyright 2026 Vinarija Anja. Sva prava zadržana. <br />
+                <small>Student: Anastasia Mitevski 8/24</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.plugin.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/spectragram.min.js"></script>
+    <script src="js/scrollReveal.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/twitterFetcher_v10_min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

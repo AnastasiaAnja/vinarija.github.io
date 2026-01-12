@@ -1,0 +1,242 @@
+.filter-nav {
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.btn-filter {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+  color: #a87f97;
+}
+
+.wine-item {
+  transition: all 0.4s ease-in-out;
+}
+
+.author-container {
+  padding-top: 140px;
+}
+
+#wine-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wine-item {
+  float: none !important;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+.team-1-member {
+  text-align: center;
+}
+
+.team-1-member img {
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.expander-item {
+  border: 1px solid #f0f0f0;
+  margin-bottom: 15px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.expander-header {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #444;
+}
+
+.expander-header:hover {
+  color: #a87f97;
+}
+
+.expander-content {
+  display: none;
+  padding: 0 20px 20px 20px;
+  border-top: 1px solid #f9f9f9;
+}
+
+.btn-izaberi {
+  background: #a87f97;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.expander-item.active {
+  border-color: #a87f97;
+}
+.expander-item.active .expander-content {
+  display: block;
+}
+.expander-item.active .icon_plus:before {
+  content: "\4d";
+}
+
+.contact-form-container {
+  max-width: 100% !important;
+  margin: 20px auto;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group-ict {
+  margin-bottom: 20px;
+}
+
+.form-group-ict label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.form-group-ict input[type="text"],
+.form-group-ict textarea {
+  width: 100% !important;
+  padding: 12px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 0px !important;
+  font-size: 15px;
+  background: #fafafa !important;
+  transition: 0.3s;
+}
+
+.form-group-ict input:focus,
+.form-group-ict textarea:focus {
+  border-color: #a87f97 !important;
+  background: #fff !important;
+  outline: none;
+}
+
+#btnPosalji {
+  background: #a87f97;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btnPosalji:hover {
+  background: #8e6b80;
+}
+
+.error-msg-ict {
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.status-box-ict {
+  margin-top: 20px;
+  padding: 15px;
+  display: none;
+  text-align: center;
+}
+
+.form-group-ict select {
+  width: 100% !important;
+  padding: 10px !important;
+  border: 1px solid #ddd !important;
+  background: #fafafa;
+}
+
+.form-group-ict input[type="radio"],
+.form-group-ict input[type="checkbox"] {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.form-group-ict input[type="date"] {
+  width: 100% !important;
+  padding: 10px !important;
+  border: 1px solid #ddd !important;
+  background: #fafafa !important;
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+}
+
+.form-group-ict input[type="date"]:focus {
+  border-color: #a87f97 !important;
+  background: #fff !important;
+  outline: none;
+}
+.text-center {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 20px;
+  }
+}
+
+.hobi-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.hobi-item {
+  background: #fdf9fb;
+  border-left: 3px solid #a87f97;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.hobi-item:hover {
+  transform: translateX(10px);
+  background: #f7eff3;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links li a {
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: #fff !important;
+  padding-left: 5px;
+}
+
+.footer-1 i {
+  margin-right: 5px;
+  font-size: 16px;
+  vertical-align: middle;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mapa sajta | Vinarija Anja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/theme-1.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="sitemap-section" style="padding: 100px 0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h1>Mapa sajta</h1>
+              <p class="lead">
+                Pregled svih stranica i funkcionalnosti našeg sajta.
+              </p>
+              <hr style="width: 50px; border-top: 2px solid #a87f97" />
+            </div>
+          </div>
+
+          <div
+            id="sitemap-container"
+            class="row"
+            style="margin-top: 50px"
+          ></div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const stranice = [
+          {
+            naslov: "Početna",
+            link: "index.html",
+            opis: "Glavna stranica sa osnovnim informacijama.",
+          },
+          {
+            naslov: "O nama",
+            link: "about.html",
+            opis: "Upoznajte našu istoriju i tradiciju.",
+          },
+          {
+            naslov: "Naša vina",
+            link: "wines.html",
+            opis: "Katalog vina sa mogućnošću filtriranja.",
+          },
+          {
+            naslov: "Proces",
+            link: "process.html",
+            opis: "Detaljan opis koraka u proizvodnji vina.",
+          },
+          {
+            naslov: "Kontakt",
+            link: "contact.html",
+            opis: "Zakazivanje degustacija i kontakt podaci.",
+          },
+          {
+            naslov: "Autor",
+            link: "author.html",
+            opis: "Informacije o autoru projekta.",
+          },
+        ];
+
+        const kontejner = document.getElementById("sitemap-container");
+
+        stranice.forEach((str) => {
+          // 1. Kreiranje kolone (Lekcija: Upravljanje DOM-om)
+          const col = document.createElement("div");
+          col.className = "col-md-4 col-sm-6";
+          col.style.marginBottom = "30px";
+
+          // 2. Kreiranje linka/naslova
+          const a = document.createElement("a");
+          a.href = str.link;
+          a.style.color = "#a87f97";
+          a.style.fontSize = "20px";
+          a.style.fontWeight = "bold";
+          a.textContent = str.naslov;
+
+          // 3. Kreiranje opisa
+          const p = document.createElement("p");
+          p.textContent = str.opis;
+          p.style.marginTop = "10px";
+
+          // 4. Sklapanje (Lekcija: appendChild)
+          col.appendChild(a);
+          col.appendChild(p);
+          kontejner.appendChild(col);
+        });
+      });
+    </script>
+  </body>
+</html>
